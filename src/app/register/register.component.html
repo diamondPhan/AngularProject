@@ -1,0 +1,112 @@
+<body>
+
+    <!-- Begin page -->
+    <div class="accountbg"></div>
+    <div class="wrapper-page">
+        <div class="card">
+
+            <div class="card-body">
+                <h3 class="text-center m-t-0 m-b-15">
+                    <a href="index.html" class="logo"><img src="assets\images\logo_white.png" alt="logo-img"></a>
+                </h3>
+                <h4 class="text-muted text-center m-t-0"><b>Sign Up</b></h4>
+
+                <form class="form-horizontal m-t-20" action="index.html" [formGroup]="registerForm" (ngSubmit)="onsubmit()">
+
+                    <div class="form-group">
+                        <div class="col-12">
+                            <input class="form-control" type="email" required="" placeholder="Email" formControlName="email">
+                            <div *ngIf="registerForm.controls.email.invalid && (registerForm.controls.email.dirty ||registerForm.controls.email.touched)">
+                                <small *ngIf="registerForm.controls.email.errors.required" class="text-danger">email is required.</small>
+                                  <!-- <small *ngIf="registerForm.errors.email" class="text-danger" >Email is invalid</small>	  -->
+                                  </div>
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-12">
+                            <input class="form-control" type="text" required="" placeholder="First Name" formControlName="firstName">
+                            <div *ngIf="registerForm.controls.firstName.invalid && (registerForm.controls.firstName.dirty ||registerForm.controls.firstName.touched)">
+                                <small *ngIf="registerForm.controls.firstName.errors.required" class="text-danger">firstName is required.</small>
+                                  <!-- <small *ngIf="registerForm.errors.email" class="text-danger" >Email is invalid</small>	  -->
+                                  </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-12">
+                            <input class="form-control" type="text" required="" placeholder="Last Name" formControlName="lastName">
+                            <div *ngIf="registerForm.controls.lastName.invalid && (registerForm.controls.lastName.dirty ||registerForm.controls.lastName.touched)">
+                                <small *ngIf="registerForm.controls.lastName.errors.required" class="text-danger">lastName is required.</small>
+                                  <!-- <small *ngIf="registerForm.errors.email" class="text-danger" >Email is invalid</small>	  -->
+                                  </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-12">
+                            <input class="form-control" type="password" required="" placeholder="Password" formControlName="password">
+                            <div *ngIf="registerForm.controls.password.invalid && (registerForm.controls.password.dirty ||registerForm.controls.password.touched)">
+                                <small *ngIf="registerForm.controls.password.errors.required" class="text-danger">password is required.</small>
+                                  <!-- <small *ngIf="registerForm.errors.email" class="text-danger" >Email is invalid</small>	  -->
+                                  </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-12">
+                            <input class="form-control" type="password" required="" placeholder="Confirm Password" formControlName="confirmPassword">
+                            <div *ngIf="registerForm.controls.confirmPassword.invalid && (registerForm.controls.confirmPassword.dirty ||registerForm.controls.confirmPassword.touched)">
+                                <small *ngIf="registerForm.controls.confirmPassword.errors.required" class="text-danger">confirmPassword is required.</small>
+                                  <small *ngIf="registerForm.controls.confirmPassword.errors.mustMatch" class="text-danger" >Confirm Password is not match</small>	 
+                                  </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-12">
+                            <div class="checkbox checkbox-primary">
+                                <input id="checkbox-signup" type="checkbox" checked="checked">
+                                <label for="checkbox-signup">
+                                    I accept <a href="#">Terms and Conditions</a>
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="form-group text-center m-t-40">
+                        <div class="col-12">
+                            <button class="btn btn-primary btn-block btn-lg waves-effect waves-light" type="submit" (click)="creataccountonfb()">Register</button>
+                        </div>
+                    </div>
+
+                    <div class="form-group m-t-30 m-b-0">
+                        <div class="col-sm-12 text-center">
+                            <a href="/login" class="text-muted">Already have account?</a>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- jQuery 
+    <script src="assets\js\jquery.min.js"></script>
+    <script src="assets\js\popper.min.js"></script>
+    <script src="assets\js\bootstrap.min.js"></script>
+    <script src="assets\js\modernizr.min.js"></script>
+    <script src="assets\js\detect.js"></script>
+    <script src="assets\js\fastclick.js"></script>
+    <script src="assets\js\jquery.slimscroll.js"></script>
+    <script src="assets\js\jquery.blockUI.js"></script>
+    <script src="assets\js\waves.js"></script>
+    <script src="assets\js\wow.min.js"></script>
+    <script src="assets\js\jquery.nicescroll.js"></script>
+    <script src="assets\js\jquery.scrollTo.min.js"></script>
+
+    <script src="assets\js\app.js"></script> -->
+
+</body>
