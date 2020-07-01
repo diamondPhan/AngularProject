@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "App-Fe1933"
+    }
+  },
+  "defaultProject": "App-Fe1933",
+  "cli": {
+    "analytics": "f05c5acd-9eca-4e8d-bb90-b45c88afec66"
+  }
 }
